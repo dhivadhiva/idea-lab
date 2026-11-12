@@ -1,0 +1,77 @@
+labels: ["status: new"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea! Rough is fine; the community will help shape it.
+        Lead with the **problem**, then the idea. Please [search existing ideas](https://github.com/dhivadhiva/idea-lab/discussions/categories/ideas) first so we don't end up with duplicates.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What's annoying, slow, missing or hard today? Who runs into it?
+      placeholder: Every time I want to show a teammate what's in my terminal, I end up pasting blurry screenshots into chat...
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What would you build, and how would someone use it?
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of project is it?
+      multiple: true
+      options:
+        - Mobile app
+        - Desktop app
+        - Web app or website
+        - CLI or developer tool
+        - Library, SDK or API
+        - Browser or editor extension
+        - AI or machine learning
+        - Hardware or IoT
+        - Game
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What exists today?
+      description: Similar tools or workarounds, and why they fall short. "None that I know of" is a fine answer.
+  - type: textarea
+    id: first-version
+    attributes:
+      label: Smallest useful version
+      description: What's the first version that would already help someone? Small first versions are the ones that get built.
+  - type: dropdown
+    id: involvement
+    attributes:
+      label: How involved do you want to be?
+      options:
+        - I want to build it
+        - I'd help build it
+        - I'd use it and give feedback
+        - Just sharing the idea
+    validations:
+      required: true
+  - type: input
+    id: skills
+    attributes:
+      label: Skills or tech it might need
+      placeholder: e.g. Rust, Flutter, Bluetooth LE, UI design
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched and didn't find this idea already posted.
+          required: true
+        - label: I understand that ideas posted here are public and anyone may build them.
+          required: true
+        - label: I agree to follow the [Code of Conduct](https://github.com/dhivadhiva/idea-lab/blob/main/CODE_OF_CONDUCT.md).
+          required: true

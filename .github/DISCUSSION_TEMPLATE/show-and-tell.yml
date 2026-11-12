@@ -1,0 +1,34 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Show us what you built! Projects that started as an idea here are especially welcome.
+  - type: input
+    id: what
+    attributes:
+      label: What did you build?
+      description: One line is enough.
+      placeholder: A tiny CLI that turns screenshots into Markdown tables
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Where can we try it?
+      description: Repo, website, store page or demo video.
+    validations:
+      required: true
+  - type: input
+    id: idea
+    attributes:
+      label: Which idea did it come from?
+      description: Link to the idea discussion here, if there is one.
+  - type: textarea
+    id: details
+    attributes:
+      label: Tell us about it
+      description: What it does, how it's built, what you learned. Screenshots help.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What feedback or help are you looking for?

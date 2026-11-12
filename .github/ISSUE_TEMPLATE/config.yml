@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Share a new idea
+    url: https://github.com/dhivadhiva/idea-lab/discussions/new?category=ideas
+    about: New ideas start as discussions so the community can shape them.
+  - name: Ask a question
+    url: https://github.com/dhivadhiva/idea-lab/discussions/new?category=q-a
+    about: Questions about an idea, a tech stack, or how to get started.
+  - name: Show what you built
+    url: https://github.com/dhivadhiva/idea-lab/discussions/new?category=show-and-tell
+    about: Share a project, especially one that started here.

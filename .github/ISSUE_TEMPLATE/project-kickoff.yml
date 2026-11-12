@@ -1,0 +1,40 @@
+name: Project kickoff
+description: Track an idea from Discussions that someone has started building.
+title: "[Kickoff] "
+labels: ["status: in-progress"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this once someone has said they'll build an idea. **New ideas go in [Discussions → Ideas](https://github.com/dhivadhiva/idea-lab/discussions/new?category=ideas), not here.**
+  - type: input
+    id: idea
+    attributes:
+      label: Idea discussion
+      description: Link to the idea this builds on.
+    validations:
+      required: true
+  - type: input
+    id: builders
+    attributes:
+      label: Who's building it?
+      placeholder: "@your-handle, @teammate"
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Project repo
+      description: Link, if it exists yet.
+  - type: textarea
+    id: plan
+    attributes:
+      label: First version plan
+      description: What will the first release do? What's left out on purpose?
+    validations:
+      required: true
+  - type: textarea
+    id: help
+    attributes:
+      label: Help wanted
+      description: Skills or roles you're looking for, if any. Add the `help wanted` label if you'd like teammates.
